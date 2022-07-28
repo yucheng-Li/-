@@ -1,0 +1,229 @@
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+.page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 15%;
+
+    .bg-pc {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        img {
+            object-fit: cover;
+        }
+    }
+}
+
+.info-contain {
+    position: absolute;
+    left: 349px;
+    top: 180px;
+
+
+
+    .title {
+        position: relative;
+
+        h1 {
+            font-family: 'HYYakuHei';
+            font-size: 72px;
+            line-height: 97px;
+            font-weight: 800;
+            color: #FFFFFF;
+            transform: matrix(0.98, 0, -0.19, 1, 0, 0);
+        }
+
+        img {
+            position: absolute;
+            top: -32px;
+            left: -16px;
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        margin-top: 31.75px;
+
+        span {
+            font-weight: 500;
+            font-size: 26px;
+            color: #D8D8D8;
+            opacity: 0.8;
+            text-align: left;
+        }
+    }
+
+    .button-contain {
+        margin-top: 174px;
+
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 246px;
+            height: 66px;
+            background-color: #fff;
+            border-radius: 2px;
+
+            span {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 28px;
+                color: #000000;
+            }
+
+            .pc-icon {
+                width: 44px;
+                height: 44px;
+                margin-right: 14px;
+            }
+
+            .ipad-icon {
+                width: 23px;
+                height: 28px;
+                margin-right: 24px;
+            }
+        }
+
+        .button:last-child {
+            margin-top: 43px;
+        }
+    }
+
+    .install {
+        display: flex;
+        align-items: center;
+        margin-top: 31px;
+
+        span {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: #FFFFFF;
+        }
+
+        img {
+            width: 18.13px;
+            height: 19.53px;
+            margin-left: 11px;
+        }
+    }
+
+    @media screen and (max-width: 1366px) {
+        font-size: 7.32vw;
+
+        @function px2rem($px) {
+            @return $px / 100 * 1em;
+        }
+
+        left: px2rem(147);
+        top: px2rem(225);
+
+        .title {
+            position: relative;
+
+            h1 {
+                font-family: 'HYYakuHei';
+                font-size: px2rem(72);
+                line-height: px2rem(97);
+                font-weight: 800;
+                color: #FFFFFF;
+                transform: matrix(0.98, 0, -0.19, 1, 0, 0);
+            }
+
+            img {
+                position: absolute;
+                top: px2rem(-32);
+                left: px2rem(-16);
+                width: px2rem(32);
+                height: px2rem(32);
+            }
+        }
+
+        .info {
+            display: flex;
+            flex-direction: column;
+            margin-top: px2rem(31.75);
+
+            span {
+                font-weight: 500;
+                font-size: px2rem(26);
+                color: #D8D8D8;
+                opacity: 0.8;
+                text-align: left;
+            }
+        }
+
+        .button-contain {
+            margin-top: px2rem(174);
+
+            .button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: px2rem(246);
+                height: px2rem(66);
+                background-color: #fff;
+                border-radius: px2rem(2);
+
+                span {
+                    font-weight: 500;
+                    font-size: px2rem(20);
+                    line-height: px2rem(28);
+                    color: #000000;
+                }
+
+                .pc-icon {
+                    width: px2rem(44);
+                    height: px2rem(44);
+                    margin-right: px2rem(14);
+                }
+
+                .ipad-icon {
+                    width: px2rem(23);
+                    height: px2rem(28);
+                    margin-right: px2rem(24);
+                }
+            }
+
+            .button:last-child {
+                margin-top: px2rem(43);
+            }
+        }
+
+        .install {
+            display: flex;
+            align-items: center;
+            margin-top: px2rem(31);
+
+            span {
+                font-weight: 400;
+                font-size: px2rem(16);
+                line-height: px2rem(22);
+                color: #FFFFFF;
+            }
+
+            img {
+                width: px2rem(18.13);
+                height: px2rem(19.53);
+                margin-left: px2rem(11);
+            }
+        }
+    }
+}
